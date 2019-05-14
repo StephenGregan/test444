@@ -19,5 +19,5 @@ package pokemonhotel.Models;
  * @author Stephen Gregan
  */
 public class AirPokemon extends Pokemon
-{ 
-} 
+{
+}

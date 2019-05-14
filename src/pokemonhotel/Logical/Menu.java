@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @author Daniel Murphy
  */
 public class Menu
-{  
+{
 
     // Declare an instance of the class
     // [InformationDisplayer], set the name
@@ -81,19 +81,19 @@ public class Menu
     public void HandleInput(int input)
     {
         switch (input)
-        { 
+        {
             case 1:
-            { 
+            {
                 infoDisplayer.OutputAllPokemon();
                 break;
-            } 
+            }
             case 2:
-            { 
+            {
                 infoDisplayer.OutputPersonalAssistantsAndAssignedPokemon();
                 break;
-            } 
+            }
             case 3:
-            { 
+            {
                 System.out.println("----------------------------------------------------------");
                 System.out.print("\u001B[31m" + " Enter the room number of the room you would like to see: ");
                 if (!scan.hasNextInt())
@@ -106,9 +106,9 @@ public class Menu
                     infoDisplayer.OutputRoomContent(scan.nextInt());
                 }
                 break;
-            } 
+            }
             case 4:
-            { 
+            {
                 System.out.println("---------------------------------------------------------------");
                 System.out.print("\u001B[31m" + " Enter the Genetic Stamp of the pokemon you would like to see: ");
                 if (!scan.hasNextInt())
@@ -121,37 +121,37 @@ public class Menu
                     infoDisplayer.OutputPokemonInformation(scan.nextInt());
                 }
                 break;
-            } 
+            }
             case 5:
-            { 
+            {
                 infoDisplayer.OutputUnAssignedPokemon();
                 break;
-            } 
+            }
             case 6:
-            { 
+            {
                 infoDisplayer.OuputAssignedPokemon();
                 break;
-            } 
+            }
             case 7:
-            { 
+            {
                 infoDisplayer.OutputTotalNumberOfPokemonHotelCanAccommodate();
                 break;
-            } 
+            }
             case 8:
-            { 
+            {
                 infoDisplayer.OutputUnoccupiedRooms();
                 break;
-            } 
+            }
             case 9:
-            { 
+            {
                 infoDisplayer.OutputUnassignedPersonalAssistants();
                 break;
-            } 
+            }
             default:
-            { 
+            {
                 System.out.println("\u001B[31m" + " Invalid input please try again ");
                 break;
-            } 
-        } 
-    } 
-} 
+            }
+        }
+    }
+}

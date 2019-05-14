@@ -17,7 +17,7 @@ import java.util.Scanner;
  * @author Stephen Gregan
  */
 public class DataStore
-{ 
+{
 
     // Declare an ArrayList of type String called
     // [names] that will hold all the name contents.
@@ -51,16 +51,20 @@ public class DataStore
         // supplied with the required specifications
         // [pokemon.txt] and store them in the 
         // ArrayList<String> names;
-        this.names = ReadFromFile(NamesFilePath);
+        this.names      = ReadFromFile(NamesFilePath);
+        
         // Initialize the ArrayList 
         // [landTypes].
-        landTypes = new ArrayList<>();
+        landTypes       = new ArrayList<>();
+        
         // Initialize the ArrayList 
         // [waterTypes].
-        waterTypes = new ArrayList<>();
+        waterTypes      = new ArrayList<>();
+        
         // Initialize the ArrayList 
         // [airTypes].
-        airTypes = new ArrayList<>();
+        airTypes        = new ArrayList<>();
+        
         // Populate the landTypes
         // [ArrayList] with all
         // the required types
@@ -72,6 +76,7 @@ public class DataStore
         landTypes.add("Ground");
         landTypes.add("Rock");
         landTypes.add("Steel");
+        
         // Populate the waterTypes
         // [ArrayList] with all
         // the required types
@@ -79,6 +84,7 @@ public class DataStore
         waterTypes.add("Water");
         waterTypes.add("Ice");
         waterTypes.add("Dark");
+        
         // Populate the airTypes
         // [ArrayList] with all
         // the required types
@@ -92,15 +98,18 @@ public class DataStore
         airTypes.add("Dragon");
         airTypes.add("Fairy");
     }
-    
+
     private ArrayList<String> ReadFromFile(String filePath)
     {
         // Declare and initialize an ArrayList of type
         // String called [filled].
         ArrayList<String> filled = new ArrayList<>();
-        // Declare and initialize a new File called [file]
-        // that takes in a file path as an argument.
+        
+        // Declare and initialize a new 
+        // File called [file] that takes 
+        // in a file path as an argument.
         File file = new File(filePath);
+        
         // Set up a try/catch block.  Within
         // the try parenthesese declare and 
         // initialize a new Scanner called
@@ -128,7 +137,7 @@ public class DataStore
         // [filled] of
         // type String.
         return filled;
-    } 
+    }
 
     /**
      * This method returns all Pokemon names that are read in from text file
@@ -137,9 +146,9 @@ public class DataStore
      * @return All the Pokemon Names.
      */
     public ArrayList<String> getNames()
-    { 
+    {
         return names;
-    } 
+    }
 
     /**
      * This method returns all Pokemon that have a specified type of Land.
@@ -147,9 +156,9 @@ public class DataStore
      * @return All the types of Pokemon of type Land.
      */
     public ArrayList<String> getLandTypes()
-    { 
+    {
         return landTypes;
-    } 
+    }
 
     /**
      * This method returns all Pokemon that have a specified type of Water.
@@ -157,9 +166,9 @@ public class DataStore
      * @return waterTypes
      */
     public ArrayList<String> getWaterTypes()
-    { 
+    {
         return waterTypes;
-    } 
+    }
 
     /**
      * This method returns all Pokemon that have a specified type of Air.
@@ -167,10 +176,7 @@ public class DataStore
      * @return airTypes
      */
     public ArrayList<String> getAirTypes()
-    { 
+    {
         return airTypes;
-    } 
-
-    
-} 
-
+    }
+}
