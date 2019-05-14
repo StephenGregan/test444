@@ -19,7 +19,7 @@ import pokemonhotel.Logical.SetUp;
  */
 public class PokemonHotel
 {
-
+    
     /**
      * @param args the command line arguments
      */
